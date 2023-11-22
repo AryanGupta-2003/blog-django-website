@@ -2,7 +2,8 @@
     "builds": [
       {
         "src": "blogverse/wsgi.py",
-        "use": "@vercel/python"
+        "use": "@vercel/python",
+        "config":{ "maxLambdaSizen": "15mb", "runtime":"python3.11.5" }
       },
       {
         "src":"build_files.sh",
